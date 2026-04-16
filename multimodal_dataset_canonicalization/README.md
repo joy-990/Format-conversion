@@ -71,6 +71,7 @@ Unless the user explicitly says otherwise:
 - preserve useful original fields in `meta`
 - remove leading `/` from media paths
 - keep normalized relative paths
+- default `storage_type` should be `ceph`
 - write final converted JSONL directly into the target output directory
 - avoid extra output subfolders by default
 

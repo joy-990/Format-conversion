@@ -22,6 +22,7 @@ Unless the user explicitly says otherwise:
 
 - remove leading `/` from media paths
 - prefer normalized relative paths for image / audio / document references
+- use `storage_type: "ceph"` by default in canonical multimodal records
 - preserve dataset-relative folder structure after removing the leading `/`
 - only prepend dataset prefixes when needed for correctness
 - do not keep machine-specific absolute prefixes in canonical training data

@@ -170,6 +170,7 @@ Unless the user explicitly says otherwise:
 
 - remove leading `/` from media paths
 - prefer normalized relative paths
+- default `storage_type` should be `ceph`
 - preserve dataset-relative folder structure after removing the leading `/`
 - only prepend dataset prefixes when needed for correctness
 - do not keep machine-specific absolute prefixes in canonical training data
