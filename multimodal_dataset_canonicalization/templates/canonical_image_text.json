@@ -1,0 +1,40 @@
+{
+  "id": "sample_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "dataset_type": "train",
+            "storage_type": "ceph",
+            "url": "images/example.jpg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Describe this image."
+        }
+      ]
+    }
+  ],
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "A mountain landscape with a lake in the foreground."
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source_dataset": "example_caption_dataset",
+    "task_type": "image_caption"
+  }
+}

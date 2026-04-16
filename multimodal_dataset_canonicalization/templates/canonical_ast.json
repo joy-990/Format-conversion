@@ -1,0 +1,39 @@
+{
+  "id": "sample_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Translate the speech in the audio into English."
+        },
+        {
+          "type": "audio_url",
+          "audio_url": {
+            "storage_type": "ceph",
+            "url": "audio/example.ogg"
+          }
+        }
+      ]
+    }
+  ],
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "Good morning everyone."
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source_dataset": "example_ast_dataset",
+    "task_type": "ast"
+  }
+}

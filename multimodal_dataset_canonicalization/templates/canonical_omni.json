@@ -1,0 +1,51 @@
+{
+  "id": "sample_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "Look at the image and listen to the audio, then answer the question."
+        },
+        {
+          "type": "image_url",
+          "image_url": {
+            "dataset_type": "train",
+            "storage_type": "ceph",
+            "url": "images/example.jpg"
+          }
+        },
+        {
+          "type": "audio_url",
+          "audio_url": {
+            "storage_type": "ceph",
+            "url": "audio/example.wav"
+          }
+        },
+        {
+          "type": "text",
+          "text": "What event is taking place?"
+        }
+      ]
+    }
+  ],
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "A birthday party."
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source_dataset": "example_omni_dataset",
+    "task_type": "omni_instruction"
+  }
+}

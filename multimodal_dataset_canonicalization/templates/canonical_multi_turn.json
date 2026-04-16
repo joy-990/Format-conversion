@@ -1,0 +1,57 @@
+{
+  "id": "sample_id",
+  "messages": [
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "image_url",
+          "image_url": {
+            "dataset_type": "train",
+            "storage_type": "ceph",
+            "url": "images/example.jpg"
+          }
+        },
+        {
+          "type": "text",
+          "text": "Describe this image."
+        }
+      ]
+    },
+    {
+      "role": "assistant",
+      "content": [
+        {
+          "type": "text",
+          "text": "It shows a street with several parked cars."
+        }
+      ]
+    },
+    {
+      "role": "user",
+      "content": [
+        {
+          "type": "text",
+          "text": "What color is the nearest car?"
+        }
+      ]
+    }
+  ],
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": [
+          {
+            "type": "text",
+            "text": "White."
+          }
+        ]
+      }
+    }
+  ],
+  "meta": {
+    "source_dataset": "example_dataset"
+  }
+}
