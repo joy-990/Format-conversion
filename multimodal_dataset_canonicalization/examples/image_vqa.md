@@ -9,6 +9,10 @@ A dataset sample contains:
 
 ## Canonical sample example
 
+In real conversion logic, `dataset_type` must be inferred from the source folder name:
+- use `train` when the source folder name contains `train`
+- use `test` when the source folder name contains `test`
+
 ```json
 {
   "id": "21",

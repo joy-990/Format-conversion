@@ -72,6 +72,9 @@ Unless the user explicitly says otherwise:
 - remove leading `/` from media paths
 - keep normalized relative paths
 - default `storage_type` should be `ceph`
+- set `dataset_type` only to `train` or `test`
+- if the source folder name contains `train`, set `dataset_type` to `train`
+- if the source folder name contains `test`, set `dataset_type` to `test`
 - write final converted JSONL directly into the target output directory
 - avoid extra output subfolders by default
 
